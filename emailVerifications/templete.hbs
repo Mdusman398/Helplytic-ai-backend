@@ -1,41 +1,50 @@
-<!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Email Verification</title>
-</head>
-<body style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, sans-serif;">
+  </head>
+  <body
+    style="margin:0; padding:0; background-color:#f4f6f8; font-family:Arial, sans-serif;"
+  >
 
     <table align="center" width="100%" cellpadding="0" cellspacing="0">
-        <tr>
-            <td align="center">
-                
-                <table width="600" cellpadding="0" cellspacing="0" style="background:#ffffff; margin-top:40px; border-radius:8px; padding:40px; box-shadow:0 5px 15px rgba(0,0,0,0.05);">
-                    
-                    <!-- Logo / Heading -->
-                    <tr>
-                        <td align="center">
-                            <h2 style="color:#2c3e50; margin-bottom:10px;">
-                                Welcome to Usman App 
-                            </h2>
-                            <p style="color:#7f8c8d; font-size:15px;">
-                                Please verify your email address to activate your account.
-                            </p>
-                        </td>
-                    </tr>
+      <tr>
+        <td align="center">
 
-                    <!-- Divider -->
-                    <tr>
-                        <td>
-                            <hr style="border:none; border-top:1px solid #ecf0f1; margin:25px 0;">
-                        </td>
-                    </tr>
+          <table
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            style="background:#ffffff; margin-top:40px; border-radius:8px; padding:40px; box-shadow:0 5px 15px rgba(0,0,0,0.05);"
+          >
 
-                    <!-- Button -->
-                    <tr>
-                        <td align="center">
-                        <a href="{{verifyLink}}"
-                               style="
+            <!-- Logo / Heading -->
+            <tr>
+              <td align="center">
+                <h2 style="color:#2c3e50; margin-bottom:10px;">
+                  Welcome to Usman App
+                </h2>
+                <p style="color:#7f8c8d; font-size:15px;">
+                  Please verify your email address to activate your account.
+                </p>
+              </td>
+            </tr>
+
+            <!-- Divider -->
+            <tr>
+              <td>
+                <hr
+                  style="border:none; border-top:1px solid #ecf0f1; margin:25px 0;"
+                />
+              </td>
+            </tr>
+
+            <!-- Button -->
+            <tr>
+              <td align="center">
+                <a
+                  href="{{verifyLink}}"
+                  style="
                                    display:inline-block;
                                    padding:14px 30px;
                                    background-color:#4f46e5;
@@ -44,39 +53,54 @@
                                    border-radius:6px;
                                    font-size:16px;
                                    font-weight:bold;
-                               ">
-                               Verify Email
-                            </a>
-                        </td>
-                    </tr>
+                               "
+                >
+                  Verify Email
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding-top:15px;">
+                <p style="font-size:12px; color:#95a5a6; word-break:break-all;">
+                  Or copy this link:
+                  {{verifyLink}}
+                </p>
+              </td>
+            </tr>
 
-                    <!-- Extra Info -->
-                    <tr>
-                        <td align="center" style="padding-top:30px;">
-                            <p style="color:#95a5a6; font-size:13px;">
-                                This link will expire in 10 minutes.
-                            </p>
+            <!-- Extra Info -->
+            <tr>
+              <td align="center" style="padding-top:30px;">
+                <p style="color:#95a5a6; font-size:13px;">
+                  This link will expire in 10 minutes.
+                </p>
 
-                            <p style="color:#bdc3c7; font-size:12px;">
-                                If you did not create this account, you can safely ignore this email.
-                            </p>
-                        </td>
-                    </tr>
+                <p style="color:#bdc3c7; font-size:12px;">
+                  If you did not create this account, you can safely ignore this
+                  email.
+                </p>
+              </td>
+            </tr>
 
-                </table>
+          </table>
 
-                <!-- Footer -->
-                <table width="600" cellpadding="0" cellspacing="0" style="margin-top:20px;">
-                    <tr>
-                        <td align="center" style="font-size:12px; color:#95a5a6;">
-                            © 2026 Usman App. All rights reserved.
-                        </td>
-                    </tr>
-                </table>
+          <!-- Footer -->
+          <table
+            width="600"
+            cellpadding="0"
+            cellspacing="0"
+            style="margin-top:20px;"
+          >
+            <tr>
+              <td align="center" style="font-size:12px; color:#95a5a6;">
+                © 2026 Usman App. All rights reserved.
+              </td>
+            </tr>
+          </table>
 
-            </td>
-        </tr>
+        </td>
+      </tr>
     </table>
 
-</body>
+  </body>
 </html>
