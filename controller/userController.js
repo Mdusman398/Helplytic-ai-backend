@@ -36,9 +36,8 @@ export const signUp = async (req, res) => {
     newUser.token = token;
     await newUser.save();
 
-  const verifyLink = `https://authentication-system-frontend-phi.vercel.app/${token}`;
-
-   await verifyMail(token, email);
+const verifyLink = `${process.env.FRONTEND_URL}/verify/${token}`;
+await verifyMail(verifyLink, email);
 
     return res.status(201).send({
       success: true,

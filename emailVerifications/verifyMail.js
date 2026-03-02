@@ -12,8 +12,8 @@ const emailTempleteSource = fs.readFileSync(
 )
 const templete = handlebars.compile(emailTempleteSource)
 
-export const verifyMail = async(token,email) => {
-    const htmlToSend = templete({ token: token })
+export const verifyMail = async(verifyLink, email) => {
+    const htmlToSend = templete({ verifyLink: verifyLink })
     const transporter = nodemailer.createTransport({
         service:"gmail",
         auth: {
