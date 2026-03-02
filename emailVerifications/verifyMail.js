@@ -29,12 +29,6 @@ export const verifyMail = async(token,email) => {
         html: htmlToSend,
     }
 
-    transporter.sendMail(mailConfiguration, function(error, info){
-        if(error){
-            throw new Error(error)
-        }
-        console.log("email send succefully to the user");
-        console.log(info);
-        
-    })
+    await transporter.sendMail(mailConfiguration)
+    console.log("Email sent successfully")
 }
