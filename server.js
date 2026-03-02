@@ -5,14 +5,14 @@ import userRouter from "./routes/userRoute.js"
 import cookieParser from "cookie-parser"
 import cors from "cors"
 const app = express()
-app.use(express.json())
 const PORT = process.env.PORT
 const corsOptions = {
-  origin: process.env.FRONTEND_URL, 
-  credentials: true,               
+    origin: process.env.FRONTEND_URL, 
+    credentials: true,               
 };
 
 app.use(cors(corsOptions));
+app.use(express.json())
 app.use(cookieParser())
 
 connectDb()
